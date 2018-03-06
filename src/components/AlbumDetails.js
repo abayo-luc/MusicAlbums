@@ -43,10 +43,10 @@ AlbumDetails.propTypes = {
 const styles = EStyleSheet.create({
 	headerContent: {
 		flexDirection: 'column',
-		justifyContent: 'space-between',
+		justifyContent: 'space-around',
 	},
 	headerText:{
-		fontSize: 18,
+		fontSize: 20,
 	},
 	thumbnail: {
 		height: 50,
