@@ -3,11 +3,11 @@ import {Text, TouchableOpacity} from 'react-native';
 import EStyleSheet from 'react-native-extended-stylesheet';
 
 
-const Button =() => {
+const Button =({onPress, children}) => {
 	const {buttonStyle, textStyle} = styles;
 	return(
-		<TouchableOpacity style={buttonStyle}>
-			<Text style={textStyle}>Click Me!</Text>
+		<TouchableOpacity style={buttonStyle} onPress={onPress}>
+			<Text style={textStyle}>{children}</Text>
 		</TouchableOpacity>
 	)
 }

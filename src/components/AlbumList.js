@@ -19,7 +19,6 @@ class AlbumList extends Component {
 	}
 
 	componentWillMount(){
-		console.log('components will mount');
 		this.getMusics();
 	}
 
@@ -32,8 +31,6 @@ class AlbumList extends Component {
 	        this.setState({
 	          isLoading: false,
 	          albums: responseJson,
-	        }, () => {
-	        	console.log(this.state.albums)
 	        });
 
 	      })
@@ -41,6 +38,7 @@ class AlbumList extends Component {
 	        console.error(error);
 	      });
 	}
+
 
 	_renderItem = ({item}) => {
 		return(
